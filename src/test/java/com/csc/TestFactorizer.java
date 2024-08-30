@@ -18,16 +18,16 @@ public class TestFactorizer {
   // of the prime factorization function.
   @Test
   public void testZero() {
-    assertEquals(2, factorizer.exampleMethod(0));
+    assertEquals(2, factorizer.PrimeFactors(0));
   }
 
   @Test
   public void testOne() {
-    assertEquals(2, factorizer.exampleMethod(1));
+    assertEquals(2, factorizer.PrimeFactors(1));
   }
 
   @Test
   public void testTen() {
-    assertEquals(1, factorizer.exampleMethod(10));
+    assertEquals(1, factorizer.PrimeFactors(10));
   }
 }
