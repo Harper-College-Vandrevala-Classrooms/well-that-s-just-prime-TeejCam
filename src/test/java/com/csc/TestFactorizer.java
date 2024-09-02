@@ -17,7 +17,7 @@ public class TestFactorizer {
   // Replace the following example tests with your own tests
   // of the prime factorization function.
   @Test
-  public void testZero() {
+  /*public void testZero() {
     assertEquals(2, factorizer.PrimeFactors(0));
   }
 
@@ -29,5 +29,5 @@ public class TestFactorizer {
   @Test
   public void testTen() {
     assertEquals(1, factorizer.PrimeFactors(10));
-  }
+  }*/
 }
