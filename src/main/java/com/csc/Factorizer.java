@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Factorizer {
 
   // You should implement your solution here.
-  public void PrimeFactors(int number) 
+  public String PrimeFactors(int number) 
   {
     String output = "";
     if (number > 1){
@@ -16,12 +16,29 @@ public class Factorizer {
         }
       }
     }
-    System.out.println("The prime factors of your number: " + output); //but wait wasnt the factorizer doing that up there?
+    //System.out.println("The prime factors of your number: " + output); 
+    return output;
+  }
+
+  public boolean isPrime(int number)
+  {
+    String factors = PrimeFactors(number);
+    factors = factors.stripTrailing();
+    if (factors.equals(String.valueOf(number))) {
+        return true;
+    }
+    else {
+      return false;
+    }
   }
 
   public static void main(String [] args) 
   {
     Factorizer factorizer = new Factorizer();
-    factorizer.PrimeFactors(100);
+    factorizer.isPrime(36); // Returns false
+    factorizer.isPrime(12); // Returns false
+    factorizer.isPrime(17); // Returns true
+    factorizer.isPrime(1); // Returns false
+    factorizer.isPrime(0); // Returns false
   }
 }
